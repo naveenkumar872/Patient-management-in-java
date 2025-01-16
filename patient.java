@@ -34,6 +34,7 @@ public class patient {
             System.out.println("2.Add new patient details:");
             System.out.println("3.Display the disease and admission date of the patient:");
             System.out.println("4.Discharge a patient:");
+            System.out.println("5.Exit");
 
             System.out.print("Enter Your Choice: ");
             int input = scan.nextInt();
@@ -44,7 +45,8 @@ public class patient {
                     if (pRecords.isEmpty()) {
                         System.out.println("\nThere is no patients");
                         break;
-                    } else {
+                    } 
+                    else {
                         System.out.println("\nPatients list");
                         for (String value : pRecords.keySet()) {
 
@@ -75,7 +77,8 @@ public class patient {
                         System.out.println("\nPatient's details:\n" + "Name:" + getNode.pName + "\nDisease name:"
                                 + getNode.pDisease + "\nAdmission date:" + getNode.pAdmissionDate);
                         break;
-                    } else {
+                    } 
+                    else {
                         System.out.println("\nThere is no patients with this name");
                         break;
                     }
@@ -90,7 +93,8 @@ public class patient {
 
                         System.out.println("\nPatient is discharged");
                         break;
-                    } else {
+                    } 
+                    else {
                         System.out.println("\nThere is no patients with this name");
                         break;
                     }
